@@ -10,6 +10,9 @@
     echo '<p>' . $new_word . '</p>';
 
     $length = strlen($new_word);
-    echo 'Lunghezza del paragrafo: ' . $length;
+    echo 'Lunghezza del paragrafo: ' . $length . '. ';
+
+    $explode = explode(';', $new_word);
+    var_dump($explode);
 
 ?>
