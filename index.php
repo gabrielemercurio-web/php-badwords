@@ -11,8 +11,9 @@
 
     $length = strlen($new_word);
     echo 'Lunghezza del paragrafo: ' . $length . '. ';
+    var_dump($new_word);
 
-    $explode = explode(';', $new_word);
-    var_dump($explode);
+    $word = explode(' ', $new_word);
+    echo $word[4];
 
 ?>
