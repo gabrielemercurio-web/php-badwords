@@ -2,14 +2,14 @@
 
 <?php
 
-
-
     $mio_testo = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
-    echo $mio_testo;
 
-    $badword = $_GET('badword');
+    $badword = $_GET['badword'];
 
-    $new_word = str_replace('amet', $badword, $mio_testo);
+    $new_word = str_replace($badword, '***', $mio_testo);
+    echo '<p>' . $new_word . '</p>';
 
+    $length = strlen($new_word);
+    echo 'Lunghezza del paragrafo: ' . $length;
 
 ?>
